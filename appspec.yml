@@ -2,11 +2,11 @@ version: 0.0
 os: windows
 files:
   - source: /
-    destination: C:\inetpub\wwwroot\DemoGIt
+    destination: C:/inetpub/wwwroot/DemoGIt
 hooks:
    BeforeInstall:
-     - location: CodeDeploy/appstop.bat       
+     - location: DemoGit/appstop.bat       
        runas: administrator
    ApplicationStart:
-     - location: CodeDeploy/appstart.bat       
+     - location: DemoGit/appstart.bat       
        runas: administrator
