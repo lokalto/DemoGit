@@ -5,8 +5,8 @@ files:
     destination: C:/inetpub/wwwroot/DemoGIt
 hooks:
    BeforeInstall:
-     - location: DemoGit/appstop.bat       
+     - location: /appstop.bat       
        runas: administrator
    ApplicationStart:
-     - location: DemoGit/appstart.bat       
+     - location: /appstart.bat       
        runas: administrator
