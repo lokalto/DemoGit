@@ -1,12 +1,12 @@
 version: 0.0
 os: windows
 files:
-  - source: /
-    destination: C:/inetpub/wwwroot/DemoGIt
+  - source: \
+    destination: C:\inetpub\wwwroot\DemoGIt
 hooks:
    BeforeInstall:
-     - location: /appstop.bat       
+     - location: \appstop.bat       
        runas: administrator
    ApplicationStart:
-     - location: /appstart.bat       
+     - location: \appstart.bat       
        runas: administrator
